@@ -1,0 +1,22 @@
+{
+  "name": "ddns_server",
+  "version": "1.0.0",
+  "description": "This is a simple ddns server for smart house project.",
+  "scripts": {
+    "start": "npm install"
+    "server": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.larry.com"
+  },
+  "keywords": [
+    "ddns"
+  ],
+  "author": "Larry",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.0.0"
+  }
+}
