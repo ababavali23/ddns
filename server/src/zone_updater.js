@@ -12,7 +12,7 @@ module.exports = (zone, address) => {
         data = data.replace(/^\s*@\s+IN\s+A\s+.+/gm, t => `${t.match(/(^\s*@\s+IN\s+A\s+).+/)[1]}${address}`);
         fs.writeFile(zone, data, 'utf-8', (error) => {
             if (!error)
-                console.log(`${zone} updated to ${address}`);
+                console.log(`${new Date()}: ${zone} updated to ${address}`);
         });
     });
 }
