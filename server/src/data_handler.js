@@ -1,3 +1,7 @@
+/*
+    Handle the data read from http server, verify it and pass it to zone_updater.
+*/
+
 'use strict';
 
 let md5 = require('md5');

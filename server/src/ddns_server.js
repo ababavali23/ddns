@@ -1,3 +1,7 @@
+/*
+    Starts up a http server to reveive data.
+*/
+
 'use strict';
 
 let http = require('http');

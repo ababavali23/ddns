@@ -1,6 +1,6 @@
 {
-    "larry.ga": {
-        "domain_zone": "/Users/larry/workspace/smart_house/ddns/server/src/test.zone",
-        "domain_token": "098f6bcd4621d373cade4e832627b4f6"
+    "your.domain": {
+        "domain_zone": "/The/absolute/path/to/your/domain/zone/file",
+        "domain_token": "your-domain-token-encrypted-by-md5"
    }
 }

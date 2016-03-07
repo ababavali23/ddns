@@ -1,3 +1,7 @@
+/*
+    Update the domain zone file with the new domain address.
+*/
+
 'use strict';
 
 let fs = require('fs');
