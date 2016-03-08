@@ -1,6 +1,6 @@
-# This is a client for ddns. It loops your ip and sends it to ddns.
-
 #!/bin/bash
+
+# This is a client for ddns. It loops your ip and sends it to ddns.
 
 # Your network interface to monitor: wlan0, eth0 ect
 NETWORK_INTERFACE="pppoe-wan"
@@ -20,11 +20,11 @@ DOMAIN_TOKEN="your_token"
 # Save the recently ip for comparation. Do not modify it.
 LAST_IP=""
 
-function getIp {
+getIp() {
     ifconfig $NETWORK_INTERFACE | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'
 }
 
-function sendIp {
+sendIp() {
     curl $SERVER_ADDR -s -X POST -H 'Content-type: application/json' -w '%{http_code}' -d '{domain_name:"'$DOMAIN_NAME'",domain_token:"'$DOMAIN_TOKEN'",domain_address:"'$1'"}'
 }
 
