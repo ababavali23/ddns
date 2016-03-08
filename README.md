@@ -1,7 +1,7 @@
 This is a nodejs ddns project.
 
 ## How does the server run?
-It starts up a http server which receives your domain information(name, address...) & modifies the config file of bind9.
+It starts up a http server which receives your domain information(name, address...), then modifies the config file of bind9 & restart it.
 
 ## Server Precondition
 You should have nodejs and bind9 installed before start.
