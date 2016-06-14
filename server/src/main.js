@@ -11,4 +11,4 @@ let port = process.argv[2] || DEFAULT_PORT;
 
 ddnsServer.listen(port);
 
-console.log(`Ddns server is listening on port ${port}`);
+console.log(`Ddns server is listening on port ${port}...`);
